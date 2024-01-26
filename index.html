@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Meu Site</title>
+    
+</head>
+<style>
+    *{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body h1{
+    color: #FFF;
+    font-size: 40px;
+    margin-bottom: 1cm;
+}
+body{
+    width:100%;
+    height: 100vh;
+    background-image: url(imagens/livros_borrados.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+form{
+    background-color: #FFF;
+    max-width: 500px;
+    height: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px black;
+}
+
+form h2{
+    text-align: center;
+    font-size: 30px;
+    color: rgb(248, 142, 4)
+
+}
+
+.forms-inscrição{
+    position: relative;
+    margin: 20px 0;
+}
+
+.forms-inscrição label{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    font-size: 14px;
+    margin: 2px;
+    transition: all 0.2s;
+    cursor: text;
+    border: 1px black;
+}
+
+.form-control{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ff9900;
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+}
+
+form .forms-inscrição .form-control:focus ~label,
+form .forms-inscrição .form-control:valid ~label{
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #ff9900;
+}
+
+.cadastrar{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color:#ff9900 ;
+    color: #fff;
+    cursor: pointer;
+}
+
+</style>
+
+<body>
+    <div>
+    <h1>BIBLIOTECA VIRTUAL</h1>
+
+    <section class="form_container">
+        <div class="container"> 
+            <form action="">
+              
+                <h2>INSCREVA-SE JÁ</h2>
+                <div>
+                    <div class="forms-inscrição">
+                      
+                      <input type="text" class="form-control" name="" id="nome_box" aria-describedby="helpId" placeholder="" required>
+                      
+                      <label for="nome_box" id="helpId" class="form-text text-muted">Nome Completo</label>
+                    </div>
+
+                    <div class="forms-inscrição">
+                        
+                        <input type="text" class="form-control" name="" id="email_box" aria-describedby="helpId" placeholder="" required>
+                        <label for="email_box"id="helpId" class="form-text text-muted">Email</label>
+                      </div>
+
+                      <div class="forms-inscrição">
+           
+                        <input type="text" class="form-control" name="" id="senha_box" aria-describedby="helpId" placeholder="" required>
+                        <label for="senha_box" id="helpId" class="form-text text-muted">Senha</label>
+                      </div>
+                </div>
+                <div class="cadastrar"><input type="submit" value="Enviar"></div>
+                </div>
+                    
+            </form>
+        </div>
+    </section>
+</body>
+</html>
